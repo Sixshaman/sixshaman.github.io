@@ -1,5 +1,6 @@
 docs/.sass-cache
 docs/.jekyll-metadata
+docs/_site
 .jekyll-cache
 vendor
 /.vs
