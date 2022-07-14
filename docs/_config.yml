@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: Sixshaman's place
 email: Sixshaman@yandex.ru
-description: Random stuff I care about
+description: "Random stuff I care about: mostly computer graphics and Lights Out"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: sixshaman
@@ -23,8 +23,9 @@ github_username:  sixshaman
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-minimal
+remote_theme: pages-themes/minimal@v0.2.0
 plugins:
+  - jekyll-remote-theme # add this line to the plugins list if you already have one
   - jekyll-feed
 
 # Exclude from processing.
