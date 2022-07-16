@@ -1,0 +1,32 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+header.apps
+{
+	float: initial;
+	width: initial;
+	position: initial;
+}
+
+footer.apps
+{
+	float: initial;
+	width: inherit;
+}
+
+h1.apps
+{
+	text-align: center;
+}
+
+p.view_apps_github
+{
+	float: left;
+}
+
+p.view_apps_pages
+{
+	float: right;
+}

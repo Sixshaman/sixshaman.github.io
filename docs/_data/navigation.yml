@@ -1,2 +1,4 @@
 - name: Home
   link: /
+  name: Apps
+  link: /apps.html
