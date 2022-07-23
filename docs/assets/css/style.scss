@@ -13,7 +13,12 @@ header.apps
 footer.apps
 {
 	float: initial;
-	width: inherit;
+	width: 45%;
+}
+
+a h1
+{
+	color: currentColor;
 }
 
 h1.apps
@@ -29,4 +34,17 @@ p.view_apps_github
 p.view_apps_pages
 {
 	float: right;
+}
+
+section.apps_section
+{
+	width: 50%;
+	float: none;
+	margin-left: 25%;
+}
+
+img.apps
+{
+	float: left;
+	margin-right: 30px;
 }

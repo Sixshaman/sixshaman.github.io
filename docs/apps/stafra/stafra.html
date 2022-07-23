@@ -1,0 +1,109 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="origin-trial"  content="Ak11j9sQKb1NhSAEdBJam//aJmA+34128ky74XPnUvFW5iILWSDz6zGUNEkO/runFeX4sEAUXgq7VvBlugVuTgIAAABPeyJvcmlnaW4iOiJodHRwczovL2xpZ2h0c3Ryb3V0LmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViR1BVIiwiZXhwaXJ5IjoxNjUyODMxOTk5fQ==">
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+        <meta http-equiv="Pragma"        content="no-cache"/>
+        <meta http-equiv="Expires"       content="0"/>
+
+        <title>STAFRA WGPU</title>
+
+        <link rel="stylesheet" type="text/css" href="stafra.css">
+
+        <script type="module">
+            import init from './stafra.js';
+            async function run()
+            {
+                await init();
+            }
+            run();
+        </script>
+    </head>
+    <body>
+        <div id="container">
+            <div id="left_part">
+                <canvas id="stafra_canvas" width="768" height="768"></canvas>
+            </div>
+
+            <div id="right_part">
+                <div id="state_selection_menus">
+                    <div id="initial_state_menu">
+                        <label for="initial_states">Initial state: </label>
+                        <select id="initial_states">
+                            <option value="initial_state_custom_value" disabled hidden></option>
+                            <option value="initial_state_corners" selected>Corners</option>
+                            <option value="initial_state_sides">Sides</option>
+                            <option value="initial_state_center">Center</option>
+                            <option value="initial_state_custom">Custom...</option>
+                        </select>
+                    </div>
+
+                    <div id="size_menu">
+                        <label for="sizes">Size: </label>
+                        <select id="sizes">
+                            <option value="size_1">1x1</option>
+                            <option value="size_3">3x3</option>
+                            <option value="size_7">7x7</option>
+                            <option value="size_15">15x15</option>
+                            <option value="size_31">31x31</option>
+                            <option value="size_63">63x63</option>
+                            <option value="size_127">127x127</option>
+                            <option value="size_255">255x255</option>
+                            <option value="size_511">511x511</option>
+                            <option value="size_1023" selected>1023x1023</option>
+                            <option value="size_2147">2147x2147</option>
+                            <option value="size_4095">4095x4095</option>
+                            <option value="size_8191">8191x8191</option>
+                            <option value="size_16383">16383x16383</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div id="control_buttons">
+                    <button id="button_stop_record">⏹️</button>
+                    <button id="button_play_pause">⏸️</button>
+                    <button id="button_next_frame">⏭️</button>
+                </div>
+
+                <button id="button_save_png" value="Save current state">SAVE PNG</button>
+
+                <div id="last_frame_checkbox_div">
+                    <input type="checkbox" id="last_frame_checkbox"/>
+                    <span id="last_frame_checkbox_label">Stop at frame: </span>
+                    <input type="number" id="last_frame_number" value="1023" min="1" disabled/>
+                </div>
+
+                <div id="spawn_period_div">
+                    <div id="spawn_period_checkbox_div">
+                        <input type="checkbox" id="spawn_checkbox"/>
+                        <span id="spawn_checkbox_label">Spawn: </span>
+                    </div>
+                    <div id="spawn_period_control_div">
+                        <button id="decrement_spawn" disabled>&minus;</button>
+                        <input type="range" id="spawn_range" min="1" max="255" step="1" value="8" disabled/>
+                        <button id="increment_spawn" disabled>&plus;</button>
+                        <input type="text" inputmode="numeric" id="spawn_number" value="8" disabled/>
+                    </div>
+                </div>
+
+                <div id="smooth_transform_div">
+                    <input type="checkbox" id="smooth_transform_checkbox"/>
+                    <span id="smooth_transform_label">Smooth transform</span>
+                </div>
+
+                <canvas id="click_rule_canvas" width="50" height="50"></canvas>
+
+                <div id="grid_checkbox_div">
+                    <input type="checkbox" id="grid_checkbox"/>
+                    <span id="grid_checkbox_label">Show grid</span>
+                </div>
+
+                <button id="button_upload_restriction" disabled>Upload restriction...</button>
+                <button id="button_clear_restriction" hidden disabled>Clear restriction</button>
+
+                <input type="file" id="board_input" accept="image/png, image/jpeg">
+                <input type="file" id="restriction_input" accept="image/png, image/jpeg">
+            </div>
+        </div>
+    </body>
+</html>
