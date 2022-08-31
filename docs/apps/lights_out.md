@@ -1,6 +1,11 @@
 ---
-layout: none
+layout: empty
 permalink: /apps/lights_out
 ---
 
-{% include_relative lights_out/puzzle.html %}
+<head>
+    {% include_head lights_out/puzzle.html %}
+</head>
+<body>
+    {% include_body lights_out/puzzle.html %}
+</body>

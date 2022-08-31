@@ -1,6 +1,11 @@
 ---
-layout: none
+layout: empty
 permalink: /apps/stafra
 ---
 
-{% include_relative stafra/stafra.html %}
+<head>
+    {% include_head stafra/stafra.html %}
+</head>
+<body>
+    {% include_body stafra/stafra.html %}
+</body>

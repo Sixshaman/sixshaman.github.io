@@ -1,6 +1,11 @@
 ---
-layout: none
+layout: empty
 permalink: /apps/lyapunov
 ---
 
-{% include_relative lyapunov/lyapunov.html %}
+<head>
+    {% include_head lyapunov/lyapunov.html %}
+</head>
+<body>
+    {% include_body lyapunov/lyapunov.html %}
+</body>

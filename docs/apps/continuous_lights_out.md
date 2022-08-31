@@ -1,6 +1,11 @@
 ---
-layout: none
+layout: empty
 permalink: /apps/continuous_lights_out
 ---
 
-{% include_relative continuous_lights_out/contlo.html %}
+<head>
+    {% include_head continuous_lights_out/contlo.html %}
+</head>
+<body>
+    {% include_body continuous_lights_out/contlo.html %}
+</body>
