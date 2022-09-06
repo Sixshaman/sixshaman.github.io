@@ -1,6 +1,6 @@
-docs/.sass-cache
-docs/.jekyll-metadata
-docs/_site
+.sass-cache
+.jekyll-metadata
+_site
 .jekyll-cache
 vendor
 /.vs
