@@ -16,6 +16,7 @@
 title: Sixshaman's place
 email: Sixshaman@yandex.ru
 description: "Random stuff I care about: mostly computer graphics and Lights Out"
+repository: sixshaman/sixshaman.github.io
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: sixshaman
