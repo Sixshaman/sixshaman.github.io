@@ -3,9 +3,6 @@ layout: empty
 permalink: /apps/wraparounder
 ---
 
-<head>
-    {% include_head wraparounder/wraparounder.html %}
-</head>
-<body>
-    {% include_body wraparounder/wraparounder.html %}
-</body>
+<html>
+{% include_relative wraparounder/wraparounder.html %}
+</html>
