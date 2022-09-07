@@ -3,5 +3,4 @@ layout: empty
 permalink: /apps/wraparounder
 ---
 
-<html>
-</html>
+{% include_relative wraparounder/wraparounder.html %}
