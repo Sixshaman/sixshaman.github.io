@@ -7,7 +7,7 @@ GIT
 
 GIT
   remote: https://github.com/Sixshaman/jekyll-include-head/
-  revision: a525d05dfd9f4037d8ca9f9f8240d3a7cb2254c4
+  revision: e752ddade9267e036210220432451d69511a79ce
   specs:
     jekyll-include-head (1.0.0)
       jekyll
