@@ -29,33 +29,38 @@ jobs:
 
       - uses: dsaltares/fetch-gh-release-asset@master
         with:
-          repo: 'Sixshaman/LightsOutWeb'
-          file: '${GITHUB_WORKSPACE}/LightsOut.zip'
-          token: ${{ secrets.GITHUB_TOKEN }}
+          repo:   'Sixshaman/LightsOutWeb'
+          file:   'LightsOut.zip'
+          target: '${GITHUB_WORKSPACE}/LightsOut.zip'
+          token:   ${{ secrets.GITHUB_TOKEN }}
 
       - uses: dsaltares/fetch-gh-release-asset@master
         with:
-          repo: 'Sixshaman/Stafra-wgpu'
-          file: '${GITHUB_WORKSPACE}/stafra_wgpu.zip'
-          token: ${{ secrets.GITHUB_TOKEN }}
+          repo:   'Sixshaman/Stafra-wgpu'
+          file:   'stafra_wgpu.zip'
+          target: '${GITHUB_WORKSPACE}/stafra_wgpu.zip'
+          token:   ${{ secrets.GITHUB_TOKEN }}
 
       - uses: dsaltares/fetch-gh-release-asset@master
         with:
-          repo: 'Sixshaman/continuous-lights-out'
-          file: '${GITHUB_WORKSPACE}/ContinuousLightsOut.zip'
-          token: ${{ secrets.GITHUB_TOKEN }}
+          repo:   'Sixshaman/continuous-lights-out'
+          file:   'ContinuousLightsOut.zip'
+          target: '${GITHUB_WORKSPACE}/ContinuousLightsOut.zip'
+          token:   ${{ secrets.GITHUB_TOKEN }}
 
       - uses: dsaltares/fetch-gh-release-asset@master
         with:
-          repo: 'Sixshaman/OneTrueWraparounder'
-          file: '${GITHUB_WORKSPACE}/wraparounder.zip'
-          token: ${{ secrets.GITHUB_TOKEN }}
+          repo:   'Sixshaman/OneTrueWraparounder'
+          file:   'wraparounder.zip'
+          target: '${GITHUB_WORKSPACE}/wraparounder.zip'
+          token:   ${{ secrets.GITHUB_TOKEN }}
 
       - uses: dsaltares/fetch-gh-release-asset@master
         with:
-          repo: 'Sixshaman/lyapunov.gl'
-          file: '${GITHUB_WORKSPACE}/LyapunovFractal.zip'
-          token: ${{ secrets.GITHUB_TOKEN }}
+          repo:   'Sixshaman/lyapunov.gl'
+          file:   'LyapunovFractal.zip'
+          target: '${GITHUB_WORKSPACE}/LyapunovFractal.zip'
+          token:   ${{ secrets.GITHUB_TOKEN }}
 
       - name: Unzip Lights Out
         run: unzip -q ${GITHUB_WORKSPACE}/LightsOut.zip -d apps/lights_out
