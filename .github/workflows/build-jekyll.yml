@@ -11,22 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-
-      - name: Create Lights Out folder
-        run: mkdir -p apps/lights_out
-
-      - name: Create Stafra folder
-        run: mkdir -p apps/stafra
-
-      - name: Create Continuous Lights Out folder
-        run: mkdir -p apps/continuous_lights_out
-
-      - name: Create Wraparounder folder
-        run: mkdir -p apps/wraparounder
-
-      - name: Create Lyapunov folder
-        run: mkdir -p apps/lyapunov
-
+      
       - uses: dsaltares/fetch-gh-release-asset@master
         with:
           repo:   'Sixshaman/LightsOutWeb'
@@ -58,19 +43,24 @@ jobs:
           token:   ${{ secrets.GITHUB_TOKEN }}
 
       - name: Unzip Lights Out
-        run: unzip -j LightsOut.zip -d apps/lights_out
+        run: unzip -j LightsOut.zip -d apps/ |
+             mv apps/LightsOut apps/lights_out
 
       - name: Unzip Stafra
-        run: unzip -j stafra_wgpu.zip -d apps/stafra
+        run: unzip -j stafra_wgpu.zip -d apps/ |
+             mv apps/stafra_wgpu apps/stafra
 
       - name: Unzip Continuous Lights Out
-        run: unzip -j ContinuousLightsOut.zip -d apps/continuous_lights_out
+        run: unzip -j ContinuousLightsOut.zip -d apps/ |
+             mv apps/ContinuousLightsOut apps/continuous_lights_out
 
       - name: Unzip Wraparounder
-        run: unzip -j wraparounder.zip -d apps/wraparounder
+        run: unzip -j wraparounder.zip -d apps/ |
+             mv apps/wraparounder apps/wraparounder
 
       - name: Unzip Lyapunov Fractal
-        run: unzip -j LyapunovFractal.zip -d apps/lyapunov
+        run: unzip -j LyapunovFractal.zip -d apps/ |
+             mv apps/LyapunovFractal apps/lyapunov
 
       - name: Remove Lights Out archive
         run: rm LightsOut.zip
