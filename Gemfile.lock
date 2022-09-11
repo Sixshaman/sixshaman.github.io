@@ -1,13 +1,13 @@
 GIT
   remote: https://github.com/Sixshaman/jekyll-include-body/
-  revision: 24537830cb47bfd093c49d7d31666a265dc4cf7c
+  revision: 76b0ab30b307a97fef1c31403769bf9527f078e4
   specs:
     jekyll-include-body (1.0.0)
       jekyll
 
 GIT
   remote: https://github.com/Sixshaman/jekyll-include-head/
-  revision: e752ddade9267e036210220432451d69511a79ce
+  revision: 90c42c5176d7c7470967019cca39d29253dcd160
   specs:
     jekyll-include-head (1.0.0)
       jekyll
@@ -15,7 +15,7 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (6.0.5.1)
+    activesupport (6.0.6)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (>= 0.7, < 2)
       minitest (~> 5.1)
@@ -234,7 +234,7 @@ GEM
       forwardable-extended (~> 2.6)
     public_suffix (4.0.7)
     racc (1.6.0)
-    rb-fsevent (0.11.1)
+    rb-fsevent (0.11.2)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
     rexml (3.2.5)
