@@ -58,19 +58,19 @@ jobs:
           token:   ${{ secrets.GITHUB_TOKEN }}
 
       - name: Unzip Lights Out
-        run: unzip -q LightsOut.zip -d apps/lights_out
+        run: unzip -j LightsOut.zip -d apps/lights_out
 
       - name: Unzip Stafra
-        run: unzip -q stafra_wgpu.zip -d apps/stafra
+        run: unzip -j stafra_wgpu.zip -d apps/stafra
 
       - name: Unzip Continuous Lights Out
-        run: unzip -q ContinuousLightsOut.zip -d apps/continuous_lights_out
+        run: unzip -j ContinuousLightsOut.zip -d apps/continuous_lights_out
 
       - name: Unzip Wraparounder
-        run: unzip -q wraparounder.zip -d apps/wraparounder
+        run: unzip -j wraparounder.zip -d apps/wraparounder
 
       - name: Unzip Lyapunov Fractal
-        run: unzip -q LyapunovFractal.zip -d apps/lyapunov
+        run: unzip -j LyapunovFractal.zip -d apps/lyapunov
 
       - name: Remove Lights Out archive
         run: rm LightsOut.zip
