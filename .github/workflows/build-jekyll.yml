@@ -13,64 +13,64 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Create Lights Out folder
-        run: mkdir -p ${GITHUB_WORKSPACE}/apps/lights_out
+        run: mkdir -p apps/lights_out
 
       - name: Create Stafra folder
-        run: mkdir -p ${GITHUB_WORKSPACE}/apps/stafra
+        run: mkdir -p apps/stafra
 
       - name: Create Continuous Lights Out folder
-        run: mkdir -p ${GITHUB_WORKSPACE}/apps/continuous_lights_out
+        run: mkdir -p apps/continuous_lights_out
 
       - name: Create Wraparounder folder
-        run: mkdir -p ${GITHUB_WORKSPACE}/apps/wraparounder
+        run: mkdir -p apps/wraparounder
 
       - name: Create Lyapunov folder
-        run: mkdir -p ${GITHUB_WORKSPACE}/apps/lyapunov
+        run: mkdir -p apps/lyapunov
 
       - uses: dsaltares/fetch-gh-release-asset@master
         with:
           repo: 'Sixshaman/LightsOutWeb'
-          file: 'LightsOut.zip'
+          file: '${GITHUB_WORKSPACE}/LightsOut.zip'
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - uses: dsaltares/fetch-gh-release-asset@master
         with:
           repo: 'Sixshaman/Stafra-wgpu'
-          file: 'stafra_wgpu.zip'
+          file: '${GITHUB_WORKSPACE}/stafra_wgpu.zip'
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - uses: dsaltares/fetch-gh-release-asset@master
         with:
           repo: 'Sixshaman/continuous-lights-out'
-          file: 'ContinuousLightsOut.zip'
+          file: '${GITHUB_WORKSPACE}/ContinuousLightsOut.zip'
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - uses: dsaltares/fetch-gh-release-asset@master
         with:
           repo: 'Sixshaman/OneTrueWraparounder'
-          file: 'wraparounder.zip'
+          file: '${GITHUB_WORKSPACE}/wraparounder.zip'
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - uses: dsaltares/fetch-gh-release-asset@master
         with:
           repo: 'Sixshaman/lyapunov.gl'
-          file: 'LyapunovFractal.zip'
+          file: '${GITHUB_WORKSPACE}/LyapunovFractal.zip'
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Unzip Lights Out
-        run: unzip -q LightsOut.zip -d ${GITHUB_WORKSPACE}/apps/lights_out
+        run: unzip -q ${GITHUB_WORKSPACE}/LightsOut.zip -d apps/lights_out
 
       - name: Unzip Stafra
-        run: unzip -q stafra_wgpu.zip -d ${GITHUB_WORKSPACE}/apps/stafra
+        run: unzip -q ${GITHUB_WORKSPACE}/stafra_wgpu.zip -d apps/stafra
 
       - name: Unzip Continuous Lights Out
-        run: unzip -q ContinuousLightsOut.zip -d ${GITHUB_WORKSPACE}/apps/continuous_lights_out
+        run: unzip -q ${GITHUB_WORKSPACE}/ContinuousLightsOut.zip -d apps/continuous_lights_out
 
       - name: Unzip Wraparounder
-        run: unzip -q wraparounder.zip -d ${GITHUB_WORKSPACE}/apps/wraparounder
+        run: unzip -q ${GITHUB_WORKSPACE}/wraparounder.zip -d apps/wraparounder
 
       - name: Unzip Lyapunov Fractal
-        run: unzip -q LyapunovFractal.zip -d ${GITHUB_WORKSPACE}/apps/lyapunov
+        run: unzip -q ${GITHUB_WORKSPACE}/LyapunovFractal.zip -d apps/lyapunov
 
       # Use GitHub Actions' cache to cache dependencies on servers
       - uses: actions/cache@v2
