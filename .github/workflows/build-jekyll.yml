@@ -31,51 +31,61 @@ jobs:
         with:
           repo:   'Sixshaman/LightsOutWeb'
           file:   'LightsOut.zip'
-          target: '${GITHUB_WORKSPACE}/LightsOut.zip'
           token:   ${{ secrets.GITHUB_TOKEN }}
 
       - uses: dsaltares/fetch-gh-release-asset@master
         with:
           repo:   'Sixshaman/Stafra-wgpu'
           file:   'stafra_wgpu.zip'
-          target: '${GITHUB_WORKSPACE}/stafra_wgpu.zip'
           token:   ${{ secrets.GITHUB_TOKEN }}
 
       - uses: dsaltares/fetch-gh-release-asset@master
         with:
           repo:   'Sixshaman/continuous-lights-out'
           file:   'ContinuousLightsOut.zip'
-          target: '${GITHUB_WORKSPACE}/ContinuousLightsOut.zip'
           token:   ${{ secrets.GITHUB_TOKEN }}
 
       - uses: dsaltares/fetch-gh-release-asset@master
         with:
           repo:   'Sixshaman/OneTrueWraparounder'
           file:   'wraparounder.zip'
-          target: '${GITHUB_WORKSPACE}/wraparounder.zip'
           token:   ${{ secrets.GITHUB_TOKEN }}
 
       - uses: dsaltares/fetch-gh-release-asset@master
         with:
           repo:   'Sixshaman/lyapunov.gl'
           file:   'LyapunovFractal.zip'
-          target: '${GITHUB_WORKSPACE}/LyapunovFractal.zip'
           token:   ${{ secrets.GITHUB_TOKEN }}
 
       - name: Unzip Lights Out
-        run: unzip -q ${GITHUB_WORKSPACE}/LightsOut.zip -d apps/lights_out
+        run: unzip -q LightsOut.zip -d apps/lights_out
 
       - name: Unzip Stafra
-        run: unzip -q ${GITHUB_WORKSPACE}/stafra_wgpu.zip -d apps/stafra
+        run: unzip -q stafra_wgpu.zip -d apps/stafra
 
       - name: Unzip Continuous Lights Out
-        run: unzip -q ${GITHUB_WORKSPACE}/ContinuousLightsOut.zip -d apps/continuous_lights_out
+        run: unzip -q ContinuousLightsOut.zip -d apps/continuous_lights_out
 
       - name: Unzip Wraparounder
-        run: unzip -q ${GITHUB_WORKSPACE}/wraparounder.zip -d apps/wraparounder
+        run: unzip -q wraparounder.zip -d apps/wraparounder
 
       - name: Unzip Lyapunov Fractal
-        run: unzip -q ${GITHUB_WORKSPACE}/LyapunovFractal.zip -d apps/lyapunov
+        run: unzip -q LyapunovFractal.zip -d apps/lyapunov
+
+      - name: Remove Lights Out archive
+        run: rm LightsOut.zip
+
+      - name: Remove Stafra archive
+        run: rm stafra_wgpu.zip
+
+      - name: Remove Continuous Lights Out archive
+        run: rm ContinuousLightsOut.zip
+
+      - name: Remove Wraparounder archive
+        run: rm wraparounder.zip
+
+      - name: Remove Lyapunov Fractal archive
+        run: rm LyapunovFractal.zip
 
       # Use GitHub Actions' cache to cache dependencies on servers
       - uses: actions/cache@v2
