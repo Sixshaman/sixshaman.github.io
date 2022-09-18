@@ -37,6 +37,5 @@ gem "kramdown-parser-gfm"
 gem "webrick", "~> 1.7"
 
 group :jekyll_plugins do
-    gem "jekyll-include-head", :git => "https://github.com/Sixshaman/jekyll-include-head/"
-    gem "jekyll-include-body", :git => "https://github.com/Sixshaman/jekyll-include-body/"
+    gem "jekyll-include-head-body", :git => "https://github.com/Sixshaman/jekyll-include-head-body/"
 end

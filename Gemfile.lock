@@ -1,15 +1,8 @@
 GIT
-  remote: https://github.com/Sixshaman/jekyll-include-body/
-  revision: 76b0ab30b307a97fef1c31403769bf9527f078e4
+  remote: https://github.com/Sixshaman/jekyll-include-head-body/
+  revision: f812313a99cdcd22e1e89d19961e1d76edbe717d
   specs:
-    jekyll-include-body (1.0.0)
-      jekyll
-
-GIT
-  remote: https://github.com/Sixshaman/jekyll-include-head/
-  revision: 90c42c5176d7c7470967019cca39d29253dcd160
-  specs:
-    jekyll-include-head (1.0.0)
+    jekyll-include-head-body (1.1.0)
       jekyll
 
 GEM
@@ -276,8 +269,7 @@ DEPENDENCIES
   github-pages
   jekyll (~> 3.9.1)
   jekyll-feed (~> 0.6)
-  jekyll-include-body!
-  jekyll-include-head!
+  jekyll-include-head-body!
   kramdown-parser-gfm
   tzinfo (~> 1.2.9)
   tzinfo-data
