@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2022-10-30T16:13:40+00:00</updated><id>/feed.xml</id><title type="html">Sixshaman’s place</title><subtitle>Random stuff I care about: mostly computer graphics and Lights Out</subtitle><entry><title type="html">Most Popular Languages According to /r/programming</title><link href="/rankings/social/2022/04/17/most-popular-programming-languages-according-to-r-programming.html" rel="alternate" type="text/html" title="Most Popular Languages According to /r/programming" /><published>2022-04-17T21:27:00+00:00</published><updated>2022-04-17T21:27:00+00:00</updated><id>/rankings/social/2022/04/17/most-popular-programming-languages-according-to-r-programming</id><content type="html" xml:base="/rankings/social/2022/04/17/most-popular-programming-languages-according-to-r-programming.html">&lt;p&gt;A while ago I wondered: if we take the number of Reddit upvotes as the marker of the programming language popularity, which ones would be the most popular?&lt;/p&gt;
+
+&lt;p&gt;A quick subreddit search found nothing, so I decided to gather the data myself. The metric I’ve chosen was the average number of upvotes in the top 10 posts containing the language name in the title. The results are:
+&lt;img src=&quot;https://user-images.githubusercontent.com/8112274/163727978-3d3cced5-3179-4859-a0fd-214e47aea21d.png&quot; alt=&quot;LanguageChart&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;what-does-it-tell-us&quot;&gt;What does it tell us&lt;/h2&gt;
+&lt;p&gt;The top 3 results are not surprising — Javascript, Java, and Python usually win these polls.&lt;/p&gt;
+
+&lt;p&gt;C# and Go have &lt;em&gt;really&lt;/em&gt; lost in popularity in the recent years. I guess a language made by a big corporation lives as long as this corporation keeps promoting it.&lt;/p&gt;
+
+&lt;p&gt;C and C++ go hand in hand, aww! They’ve got decent results, too. It’s nice to see these languages still sparking interest.&lt;/p&gt;
+
+&lt;p&gt;Rust has the highest last year/all time popularity ratio. People keep loving the language!&lt;/p&gt;
+
+&lt;p&gt;COBOL has surprisingly high results, despite being included here as a “meme” language. Though this might very well be the reason.&lt;/p&gt;
+
+&lt;p&gt;Objective-C is dead as expected — the last year didn’t even have 10 posts discussing it. Which is a shame — it was the weird kid of the C family, and weird kids often grow into extraordinary people.&lt;/p&gt;</content><author><name></name></author><category term="rankings" /><category term="social" /><summary type="html">A while ago I wondered: if we take the number of Reddit upvotes as the marker of the programming language popularity, which ones would be the most popular?</summary></entry></feed>

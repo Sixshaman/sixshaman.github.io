@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <base href="/apps/lyapunov/" />
+    <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta charset="UTF-8" />
+    <title>Lyapunov Fractal</title>
+    <script src="js/lyapunov.js?ver=1.6.1"></script>
+    <link rel="stylesheet" type="text/css" href="css/lyapunov.css?ver=1.6.1" /> 
+</head>
+</head>
+<body>
+    <body>
+    <div class="container">
+        <div class="canvascontainer">
+            <canvas id="LyapunovCanvas" width="900" height="900"></canvas>
+        </div>
+
+        <div class="displayparameters">
+            <div class="controlcontainer">
+                <div class="sequencecontainer">
+                    <textarea id="LyapunovSequence" spellcheck="false">AB</textarea>
+                </div>
+                <div class="domaincontainer">
+                    <div class="resetButtons">
+                        <button type="button" id="ResetDefaultButton">Reset to default</button>
+                        <button type="button" id="ResetNegativeButton">Reset to negative</button>
+                    </div>
+                    <div class="domaintext">
+                        <p id="DomainLabel" class="domainval">[&amp;nbsp0.00,&amp;nbsp4.00] x [&amp;nbsp0.00,&amp;nbsp4.00]</p>
+                    </div>
+                </div>
+                <div class="savecontainer">
+                    <button type="button" id="SaveButton">Save</button>
+                </div>
+        </div>
+        <div class="themebuttons">
+            <label><input type="radio" name="theme" value="Fire" id="RadioThemeFire" checked="" /><img src="images/fire.png" /></label>
+            <label><input type="radio" name="theme" value="Electro" id="RadioThemeElectro" /><img src="images/electro.png" /></label>
+            <label><input type="radio" name="theme" value="Classic" id="RadioThemeClassic" /><img src="images/classic.png" /></label>
+            <label><input type="radio" name="theme" value="Classic" id="RadioThemeSepia" /><img src="images/sepia.png" /></label>
+        </div>
+    </div>
+</div>
+</body>
+</body>
+
+</html>

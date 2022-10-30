@@ -1,0 +1,87 @@
+body
+{
+    background-color: black;
+}
+
+div.container
+{
+    display:        flex;
+    flex-direction: row;
+    flex-wrap:      wrap;
+}
+
+div.displayparameters
+{
+    display:        flex;
+    flex-direction: row;
+    flex-grow:      1;
+}
+
+div.themebuttons
+{
+    display:        flex;
+    flex-direction: column;
+}
+
+div.controlcontainer
+{
+    display:        flex;
+    flex-direction: column;
+}
+
+div.domaincontainer
+{
+    display:        flex;
+    flex-direction: row;
+}
+
+div.savecontainer
+{
+    display:        flex;
+    flex-direction: row;
+}
+
+div.resetButtons
+{
+    display:        flex;
+    flex-direction: column;
+}
+
+div.domaintext
+{
+    margin-top: -8pt;
+}
+
+input[type=radio]
+{
+    display:none;
+}
+
+button#ButtonSave
+{
+    display: block;
+    width: 100%;
+}
+
+textarea
+{
+    background-color: black;
+    border-color: yellow;
+    color: yellow;
+    resize: none;
+    border-radius: 10px;
+
+    float: left;
+    height: auto;
+
+    font-family: "Arial Rounded MT Bold", Arial, sans-serif;
+    font-size: 36pt;
+}
+
+p.domainval
+{
+    color: wheat;
+
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 16pt;
+}
